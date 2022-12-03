@@ -26,7 +26,7 @@ const ContactUs = () => {
                             </div>
                             <div className="col-span-full sm:col-span-3">
                                 <label htmlFor="email" className="text-sm">Email</label>
-                                <input id="email" type="email" placeholder="Email" defaultValue={user?.email}  disabled className="bg-base-300 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:border-gray-700 dark:text-gray-900" />
+                                <input id="email" type="email" placeholder="Email" defaultValue={user?.email}  disabled className="bg-base-300  w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:border-gray-700 dark:text-gray-900" />
                             </div>
                             <div className="col-span-full">
                                 <label htmlFor="address" className="text-sm">Address</label>
