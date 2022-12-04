@@ -1,12 +1,15 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import UseAdmin from '../../Hooks/UseAdmin';
+
 
 const NavBar = () => {
 
 
 
     const { user, logOut } = useContext(AuthContext);
+    const [isAdmin] = UseAdmin(user?.email)
     const handleLogOut = () => {
         logOut()
             .then(() => { })
@@ -31,6 +34,14 @@ const NavBar = () => {
                             <li><Link to='/'>Home</Link></li>
                             <li><Link to='/'>Products</Link></li>
                             <li><Link to='/contactus'>Contact Us</Link></li>
+
+
+                            {
+                                (isAdmin) && <>
+                                    <li><Link to='/dashboard'>DashBoard</Link></li>
+                                </>
+                            }
+
                             <li> {
                                 user?.uid ?
                                     <>
@@ -55,6 +66,20 @@ const NavBar = () => {
                         <li><Link to='/' className="btn btn-ghost normal-case " >Home</Link></li>
                         <li><Link to='/' className="btn btn-ghost normal-case " >Products</Link></li>
                         <li><Link to='/contactus' className="btn btn-ghost normal-case " >Contact Us</Link></li>
+
+                        {/* 
+                        {
+                            (isWorker || isAdmin) && <>
+                                <li><Link to='/dashboard' className="btn btn-ghost normal-case " >DashBoard</Link></li>
+                            </>
+                        } */}
+
+                        {
+                            (isAdmin) && <>
+                                <li><Link to='/dashboard' className="btn btn-ghost normal-case " >DashBoard</Link></li>
+                            </>
+                        }
+
                         {
                             user?.uid ?
                                 <>

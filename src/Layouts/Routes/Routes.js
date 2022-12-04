@@ -5,6 +5,9 @@ import ErrorRoute from './ErrorRoute';
 import Login from '../../Pages/Login/Login'
 import Register from '../../Pages/Register/Register'
 import ContactUs from '../../Pages/ContactUs/ContactUs'
+import AllUsers from '../../DashBoard/AllUsers/AllUsers';
+import PrivateRoutes from '../../Layouts/PrivateRoutes/PrivateRoutes';
+import DashboradLayouts from '../DashboardLayouts/DashboardLayouts';
 
 const router = createBrowserRouter([
 
@@ -38,8 +41,27 @@ const router = createBrowserRouter([
                 element:<ContactUs></ContactUs>,
     
             },
-           
-        ]
+            {
+                path:'/dashboard',
+                element:<PrivateRoutes><DashboradLayouts></DashboradLayouts></PrivateRoutes>,
+                children :[
+                    {
+                        path:'/dashboard',
+                        element:<AllUsers></AllUsers>
+                    },
+                    // {
+                    //     path:'/dashboard/allusers',
+                    //     element:<AllUser></AllUser>
+                    // },
+               
+                
+                ]
+                
+            }
+
+            
+        ],
+        
     },
    
 

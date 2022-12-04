@@ -34,7 +34,7 @@ const Register = () => {
     const saveUser =(name, email ,role)=>{
         const usersSaved  ={name ,email,role};
         console.log(usersSaved);
-        fetch("https://trade-buy-sell-arbinzaman.vercel.app/usersList", {
+        fetch("https://nazmajute.vercel.app/usersList", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
