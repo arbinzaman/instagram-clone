@@ -5,7 +5,7 @@ const UseWorker = email =>{
     const [isWorkerLoading, setIsWorkerLoading] = useState(true);
     useEffect(() =>{
          if (email) {
-            fetch(`https://nazmajute.vercel.app/usersList/worker/${email}`)
+            fetch(`http://localhost:5000/usersList/worker/${email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data.isWorker);

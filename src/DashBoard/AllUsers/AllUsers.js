@@ -6,7 +6,7 @@ import UseTitle from '../../Hooks/UseTitle';
 const AllUsers = () => {
     UseTitle('DashBoard')
     const [displayUser, setDisplayUser] = useState();
-    const url = `https://nazmajute.vercel.app/usersList`;
+    const url = `http://localhost:5000/usersList`;
 
     const { data: users = [], refetch } = useQuery({
         queryKey: ['users'],
@@ -21,7 +21,7 @@ const AllUsers = () => {
 
     // handleMakeAdmin
     const handleMakeAdmin = _id => {
-        fetch(`https://nazmajute.vercel.app/usersList/admin/${_id}`, {
+        fetch(`http://localhost:5000/usersList/admin/${_id}`, {
             method: 'PUT'
         })
             .then(res => res.json())
@@ -40,7 +40,7 @@ const AllUsers = () => {
     const handleDeleteUser = _id => {
 
 
-        fetch(`https://nazmajute.vercel.app/usersList/${_id}`, {
+        fetch(`http://localhost:5000/usersList/${_id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

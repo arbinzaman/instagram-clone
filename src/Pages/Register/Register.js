@@ -34,7 +34,7 @@ const Register = () => {
     const saveUser =(name, email ,role)=>{
         const usersSaved  ={name ,email,role};
         console.log(usersSaved);
-        fetch("https://nazmajute.vercel.app/usersList", {
+        fetch("http://localhost:5000/usersList", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -65,17 +65,17 @@ const Register = () => {
 
 
                     <div className="space-y-1 text-sm">
-                        <label htmlFor="username" className="block text-white">Name</label>
-                        <input type="text" name="name" id="username" placeholder="Name" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 text-white focus:dark:border-violet-400" />
+                        <label htmlFor="username" className="block text-black">Name</label>
+                        <input type="text" name="name" id="username" placeholder="Name" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 text-black focus:dark:border-violet-400" />
                     </div>
                     <div className="space-y-1 text-sm">
-                        <label htmlFor="username" className="block text-white">Email</label>
-                        <input type="email" name="email" id="username" placeholder="Email" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 text-white focus:dark:border-violet-400" />
+                        <label htmlFor="username" className="block text-black">Email</label>
+                        <input type="email" name="email" id="username" placeholder="Email" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 text-black focus:dark:border-violet-400" />
                     </div>
 
                     <div className="space-y-1 text-sm">
-                        <label htmlFor="password" className="block text-white">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 text-white focus:dark:border-violet-400" />
+                        <label htmlFor="password" className="block text-black">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 text-black focus:dark:border-violet-400" />
                         <div className="flex justify-end text-xs text-black">
                             <Link rel="noopener noreferrer" href="#">Forgot Password?</Link>
                         </div>

@@ -8,6 +8,8 @@ import ContactUs from '../../Pages/ContactUs/ContactUs'
 import AllUsers from '../../DashBoard/AllUsers/AllUsers';
 import PrivateRoutes from '../../Layouts/PrivateRoutes/PrivateRoutes';
 import DashboradLayouts from '../DashboardLayouts/DashboardLayouts';
+import AddAProduct from '../../Pages/Products/AddAProduct';
+import Products from '../../Pages/Products/Products';
 
 const router = createBrowserRouter([
 
@@ -19,6 +21,11 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
+                
+            },
+            {
+                path:'/products',
+                element:<Products></Products>,
                 
             },
             {
@@ -48,6 +55,10 @@ const router = createBrowserRouter([
                     {
                         path:'/dashboard',
                         element:<AllUsers></AllUsers>
+                    },
+                    {
+                        path:'/dashboard/addaproduct',
+                        element:<AddAProduct></AddAProduct>
                     },
                     // {
                     //     path:'/dashboard/allusers',

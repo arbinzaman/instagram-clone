@@ -5,7 +5,7 @@ const UseAdmin = email =>{
     const [isAdminLoading, setIsAdminLoading] = useState(true);
     useEffect(() =>{
          if (email) {
-            fetch(`https://nazmajute.vercel.app/usersList/admin/${email}`)
+            fetch(`http://localhost:5000/usersList/admin/${email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
