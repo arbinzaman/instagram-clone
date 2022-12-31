@@ -1,33 +1,25 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Home from '../../Pages/Home/Home/Home';
+import HomeLayouts from '../HomeLayouts/HomeLayouts';
 import Main from '../Main/Main';
 import ErrorRoute from './ErrorRoute';
 import Login from '../../Pages/Login/Login'
 import Register from '../../Pages/Register/Register'
-import ContactUs from '../../Pages/ContactUs/ContactUs'
-import AllUsers from '../../DashBoard/AllUsers/AllUsers';
-import PrivateRoutes from '../../Layouts/PrivateRoutes/PrivateRoutes';
-import DashboradLayouts from '../DashboardLayouts/DashboardLayouts';
-import AddAProduct from '../../Pages/Products/AddAProduct';
-import Products from '../../Pages/Products/Products';
+import NewesFeed from '../../Pages/NewesFeed/NewesFeed';
+
 
 const router = createBrowserRouter([
 
     {
       path:'/',
-      element:<Main></Main>,
+      element:<HomeLayouts></HomeLayouts>,
       children:[
         
-            {
-                path:'/',
-                element:<Home></Home>,
+            // {
+            //     path:'/',
+            //     element:<HomeLayouts></HomeLayouts>,
                 
-            },
-            {
-                path:'/products',
-                element:<Products></Products>,
-                
-            },
+            // },
+         
             {
                 path:'/*',
                 element:<ErrorRoute></ErrorRoute>,
@@ -42,35 +34,12 @@ const router = createBrowserRouter([
                 path:'/register',
                 element:<Register></Register>,
     
-            },
+            },         
             {
-                path:'/contactus',
-                element:<ContactUs></ContactUs>,
+                path:'/newfeed',
+                element:<NewesFeed></NewesFeed>,
     
-            },
-            {
-                path:'/dashboard',
-                element:<PrivateRoutes><DashboradLayouts></DashboradLayouts></PrivateRoutes>,
-                children :[
-                    {
-                        path:'/dashboard',
-                        element:<AllUsers></AllUsers>
-                    },
-                    {
-                        path:'/dashboard/addaproduct',
-                        element:<AddAProduct></AddAProduct>
-                    },
-                    // {
-                    //     path:'/dashboard/allusers',
-                    //     element:<AllUser></AllUser>
-                    // },
-               
-                
-                ]
-                
-            }
-
-            
+            },         
         ],
         
     },

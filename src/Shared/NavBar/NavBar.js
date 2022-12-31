@@ -64,21 +64,10 @@ const NavBar = () => {
                     <ul className=" menu menu-horizontal p-0">
 
                         <li><Link to='/' className="btn btn-ghost normal-case " >Home</Link></li>
-                        <li><Link to='/products' className="btn btn-ghost normal-case " >Products</Link></li>
-                        <li><Link to='/contactus' className="btn btn-ghost normal-case " >Contact Us</Link></li>
+                        {/* <li><Link to='/products' className="btn btn-ghost normal-case " >Products</Link></li>
+                        <li><Link to='/contactus' className="btn btn-ghost normal-case " >Contact Us</Link></li> */}
 
-                        {/* 
-                        {
-                            (isWorker || isAdmin) && <>
-                                <li><Link to='/dashboard' className="btn btn-ghost normal-case " >DashBoard</Link></li>
-                            </>
-                        } */}
-
-                        {
-                            // (isAdmin) && <>
-                                <li><Link to='/dashboard' className="btn btn-ghost normal-case " >DashBoard</Link></li>
-                            // </>
-                        }
+                
 
                         {
                             user?.uid ?
