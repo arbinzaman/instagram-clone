@@ -10,15 +10,15 @@ const NewesFeed = ({post}) => {
             <div></div>
 
             {/* story */}
-            <div className="rounded-md shadow-md sm:w-96 dark:bg-gray-900 dark:text-gray-100">
+            <div className="rounded-md shadow-md sm:w-96 ">
 
                 <div className="flex flex-col rounded-md shadow-md items-center justify-center pt-4 pb-4 border-inherit">
                     <div className="flex space-x-5 p-5">
-                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-violet-400 ring-offset-gray-800" src="https://source.unsplash.com/40x40/?portrait?1" />
-                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-violet-400 ring-offset-gray-800" src="https://source.unsplash.com/40x40/?portrait?2" />
-                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-violet-400 ring-offset-gray-800" src="https://source.unsplash.com/40x40/?portrait?3" />
-                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-gray-700 ring-offset-gray-800" src="https://source.unsplash.com/40x40/?portrait?4" />
-                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-gray-700 ring-offset-gray-800" src="https://source.unsplash.com/40x40/?portrait?4" />
+                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-red-400 ring-offset-red-100" src="https://source.unsplash.com/40x40/?portrait?1" />
+                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-red-400 ring-offset-red-100" src="https://source.unsplash.com/40x40/?portrait?2" />
+                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-red-400 ring-offset-red-100" src="https://source.unsplash.com/40x40/?portrait?3" />
+                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-red-700 ring-offset-red-100" src="https://source.unsplash.com/40x40/?portrait?4" />
+                        <img alt="" className="w-20 h-18 rounded-full ring-2 ring-offset-4  ring-red-700 ring-offset-red-100" src="https://source.unsplash.com/40x40/?portrait?4" />
                     </div>
                 </div>
 

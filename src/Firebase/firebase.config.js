@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDSY70lJkJA_MfajSGvOdECVJGmyNPDBJ8",
-  authDomain: "nazma-jute.firebaseapp.com",
-  projectId: "nazma-jute",
-  storageBucket: "nazma-jute.appspot.com",
-  messagingSenderId: "402756623961",
-  appId: "1:402756623961:web:a7d910daf95fa0dea35b48"
+  apiKey: "AIzaSyB0MibLIL9QWZNquue9lQo3wrBqwprLmyo",
+  authDomain: "insta-clone-fe05b.firebaseapp.com",
+  projectId: "insta-clone-fe05b",
+  storageBucket: "insta-clone-fe05b.appspot.com",
+  messagingSenderId: "761989824836",
+  appId: "1:761989824836:web:d945704ec0d19aed7cd711"
 };
 
 // Initialize Firebase

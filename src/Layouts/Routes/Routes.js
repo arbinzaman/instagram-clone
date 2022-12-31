@@ -6,6 +6,8 @@ import Login from '../../Pages/Login/Login'
 import Register from '../../Pages/Register/Register'
 import NewesFeed from '../../Pages/NewesFeed/NewesFeed';
 import AddAPost from '../../Pages/AddAPost/AddAPost';
+import NewesFeeds from '../../Pages/NewesFeed/NewesFeeds';
+import Profile from '../../Pages/Profile/Profile';
 
 
 const router = createBrowserRouter([
@@ -39,6 +41,17 @@ const router = createBrowserRouter([
             {
                 path:'/newfeed',
                 element:<NewesFeed></NewesFeed>,
+    
+            },         
+            {
+                path:'/profile',
+                element:<Profile></Profile>,
+    
+            },         
+            {
+                path:'/newfeeds',
+                element:<NewesFeeds></NewesFeeds>,
+                loader:()=> fetch('http://localhost:5000/addapost'),
     
             },         
             {

@@ -63,7 +63,7 @@ const AllUsers = () => {
         <div>
             <div className='grid grid-cols-3 mt-10 gap-2'>
                 <div>
-                    <Link to="/"><img src={user?.photoURL} alt="" className='w-15 h-12 rounded-full ring-2 ring-offset-4 dark:bg-gray-500 ring-violet-400 ring-offset-gray-800' /></Link>
+                    <Link to="/"><img src={user?.photoURL} alt="" className='w-15 h-12 rounded-full ring-2 ring-offset-4  ring-red-700 ring-offset-red-100"' /></Link>
                 </div>
                 <div>
                     {user?.displayName}

@@ -50,7 +50,7 @@ const DashboradLayouts = () => {
 
                                     <>
 
-                                        <Link to="/"><img src={user?.photoURL} alt="" className='h-10 rounded-full' />{user?.displayName}</Link> <button onClick={handleLogOut} className="btn-ghost normal-case ">Log Out</button>
+                                        <Link to="/profile"><img src={user?.photoURL} alt="" className='h-10 rounded-full' />{user?.displayName}</Link> <button onClick={handleLogOut} className="btn-ghost normal-case ">Log Out</button>
                                         
 
                                     </>
