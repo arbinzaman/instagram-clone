@@ -42,7 +42,7 @@ const DashboradLayouts = () => {
 
                         <li><Link to="/"><img src="https://www.pngfind.com/pngs/m/560-5601084_heart-outline-svg-vector-logos-love-instagram-hd.png" alt="" className='h-7' />Notification</Link></li>
 
-                        <li><Link to="/"><img src="https://png.pngtree.com/png-vector/20190826/ourlarge/pngtree-instagram-png-image_1696342.jpg" alt="" className='h-10' />Create</Link></li>
+                        <li><Link to="/addapost"><img src="https://png.pngtree.com/png-vector/20190826/ourlarge/pngtree-instagram-png-image_1696342.jpg" alt="" className='h-10' />Create</Link></li>
 
                         <li>
                             {
